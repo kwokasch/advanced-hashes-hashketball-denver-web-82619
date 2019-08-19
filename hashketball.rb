@@ -233,6 +233,7 @@ def player_with_longest_name
   longest_name = ''
   game_hash.each do |location, team_data|
     name_length = team_data[:players][:player_name].length
+    binding.pry
     team_data[:players].each do |player|
       if points > most_points
         most_points = points
