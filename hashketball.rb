@@ -231,12 +231,12 @@ end
 def winning_team
   winner = ''
   team_sum = 0
+  total = 0
   game_hash.each do |location, team_data|
-    total = 0
     team_name = game_hash[team_data][:team_name]
     team_data[:players].each do |player|
-      points = player[:stats][:points]
-      team_sum += points 
+      team_points = player[:stats][:points]
+      team_sum += team_points 
     end
     winner, total = team_name, team_points if team_points > total_points
     # team_data[:team_sum] = team_sum
