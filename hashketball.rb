@@ -230,9 +230,9 @@ end
 
 def winning_team
   winner = ''
-  team_sum = 0
   total = 0
   game_hash.each do |location, team_data|
+    team_sum = 0 
     team_name = team_data[:team_name]
     team_data[:players].each do |player|
       team_points = player[:stats][:points]
