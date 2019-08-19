@@ -243,3 +243,5 @@ def player_with_longest_name
   end
   mvp
 end
+
+player_with_longest_name
