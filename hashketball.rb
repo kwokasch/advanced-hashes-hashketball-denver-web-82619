@@ -249,13 +249,13 @@ def most_steals
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
       steals = player[:stats][:steals]
-      if steals > most_points
-        most_points = points
-        mvp = player[:player_name]
+      if steals > most_steals
+        most_steals = steals
+        biggest_stealer = player[:player_name]
       end
     end
   end
-  mvp
+  biggest_stealer
 end
 
 def long_name_steals_a_ton?
