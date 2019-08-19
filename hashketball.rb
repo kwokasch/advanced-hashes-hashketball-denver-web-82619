@@ -227,7 +227,7 @@ def winning_team
     # if team_sum > total
     #   total = team_sum
     #   winner = team_data[:team_name]
-    # end
+    end
   end
   winner
 end
