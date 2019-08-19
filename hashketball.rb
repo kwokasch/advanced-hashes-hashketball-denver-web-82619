@@ -243,3 +243,4 @@ def winning_team
   winner
 end
 
+def player
